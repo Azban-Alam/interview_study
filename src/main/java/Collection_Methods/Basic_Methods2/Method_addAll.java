@@ -1,9 +1,9 @@
-package Collection_Methods;
+package Collection_Methods.Basic_Methods2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Method_containsAll {
+public class Method_addAll {
 
 	public static void main(String[] args) {
 
@@ -18,32 +18,27 @@ public class Method_containsAll {
 		list2.add(67);
 		list2.add(78);
 
-		if (list1.containsAll(list2)) {
-			System.out.println("List1 Contains All");
-		} else {
-			System.out.println("List1 does not contains All");
-		}
+		list1.addAll(list2);
 
 		System.out.println(list1);
-
+		
 		// ----------------------------------------------------------
-
+		
 		List<String> l1 = new ArrayList<String>();
 		l1.add("Apple");
 		l1.add("Mango");
 		l1.add("Orange");
-
+		
 		List<String> l2 = new ArrayList<String>();
 		l1.add("Banana");
 		l1.add("Kiwi");
 		l1.add("Pine Apple");
 		
-		if (list1.containsAll(list2)) {
-			System.out.println("L1 Contains All");
-		} else {
-			System.out.println("L1 does not contains All");
-		}
+		l1.addAll(l2);
+		
+		System.out.println(l1);
 
+		
 	}
 
 }

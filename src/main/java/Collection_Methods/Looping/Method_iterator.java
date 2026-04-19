@@ -1,9 +1,10 @@
-package Collection_Methods;
+package Collection_Methods.Looping;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class Method_isEmpty {
+public class Method_iterator {
 
 	public static void main(String[] args) {
 
@@ -13,11 +14,13 @@ public class Method_isEmpty {
 		list.add(400);
 		list.add(500);
 
-		if (list.isEmpty()) {
-			System.out.println("List is Empty");
-		} else {
-			System.out.println("List Is Not Empty");
+		Iterator<Integer> itr = list.iterator();
+
+		while (itr.hasNext()) {
+			Integer next = itr.next();
+			System.out.println(next);
 		}
+
 	}
 
 }

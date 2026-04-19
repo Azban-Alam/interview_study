@@ -1,4 +1,4 @@
-package Collection_Methods;
+package Collection_Methods.Basic_Methods2;
 
 import java.util.ArrayList;
 import java.util.List;
