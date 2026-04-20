@@ -1,4 +1,4 @@
-package List_Methods;
+package List_Methods.Basic_Methods;
 
 import java.util.ArrayList;
 import java.util.List;

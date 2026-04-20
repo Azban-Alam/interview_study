@@ -1,4 +1,4 @@
-package List_Methods;
+package List_Methods.Looping;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +43,7 @@ public class Method_listIterator {
 			if (num == 36) {
 				ltr.remove();
 			}
-			
+
 		}
 
 		System.out.println("Final list: " + numbers);

@@ -1,4 +1,4 @@
-package List_Methods;
+package List_Methods.Looping;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +12,8 @@ public class ListIteratorMethodsDemo {
 		names.add("Ravi");
 
 		ListIterator<String> itr = names.listIterator();
-
-		System.out.println("Forward Traversal:");
+		
+		// Forward Traversal
 		while (itr.hasNext()) {
 			String name = itr.next();
 			System.out.println("Name: " + name + ", Next Index: " + itr.nextIndex());
@@ -23,7 +23,7 @@ public class ListIteratorMethodsDemo {
 			}
 		}
 
-		System.out.println("\nBackward Traversal:");
+		// Backward Traversal
 		while (itr.hasPrevious()) {
 			String name = itr.previous();
 			System.out.println("Name: " + name + ", Previous Index: " + itr.previousIndex());
