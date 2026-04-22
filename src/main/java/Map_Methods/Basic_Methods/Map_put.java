@@ -6,9 +6,7 @@ public class Map_put {
 	public static void main(String[] args) {
 
 		Map<String, Integer> map = new HashMap<>(); // Create a HashMap (common Map implementation)
-
-		// 1. put() - Insert key-value pairs
-		map.put("A", 100);
+		map.put("A", 100); // 1. put() - Insert key-value pairs
 		map.put("B", 200);
 		map.put("C", 300);
 		System.out.println("Initial Map: " + map);
@@ -16,11 +14,7 @@ public class Map_put {
 	}
 }
 
-
 /*
-Key		Value
-A		100
-B		200
-C		300
-
-*/
+ * Key Value A 100 B 200 C 300
+ * 
+ */
