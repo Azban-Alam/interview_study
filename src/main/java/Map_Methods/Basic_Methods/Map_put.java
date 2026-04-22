@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Map_put {
 	public static void main(String[] args) {
-		// Create a HashMap (common Map implementation)
-		Map<String, Integer> map = new HashMap<>();
+
+		Map<String, Integer> map = new HashMap<>(); // Create a HashMap (common Map implementation)
 
 		// 1. put() - Insert key-value pairs
 		map.put("A", 100);
@@ -15,3 +15,12 @@ public class Map_put {
 
 	}
 }
+
+
+/*
+Key		Value
+A		100
+B		200
+C		300
+
+*/
