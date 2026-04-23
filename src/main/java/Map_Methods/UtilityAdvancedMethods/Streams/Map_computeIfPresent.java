@@ -1,4 +1,4 @@
-package Map_Methods.UtilityAdvancedMethods;
+package Map_Methods.UtilityAdvancedMethods.Streams;
 
 import java.util.*;
 
