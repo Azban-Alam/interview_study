@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Stored to XML</comment>
+<entry key="password">12345</entry>
+<entry key="os">Windows</entry>
+<entry key="username">admin</entry>
+</properties>
