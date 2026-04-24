@@ -1,4 +1,4 @@
-package Properties_File.Basic_Methods;
+package Method_PropertiesFile;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;

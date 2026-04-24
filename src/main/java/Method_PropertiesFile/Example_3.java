@@ -1,4 +1,4 @@
-package Properties_File;
+package Method_PropertiesFile;
 // Java program to demonstrate Properties class to create
 
 // the properties file
