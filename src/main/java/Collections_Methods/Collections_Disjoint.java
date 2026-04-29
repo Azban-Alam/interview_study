@@ -1,4 +1,4 @@
-package Method_Collections;
+package Collections_Methods;
 import java.util.*;
 
 public class Collections_Disjoint {
