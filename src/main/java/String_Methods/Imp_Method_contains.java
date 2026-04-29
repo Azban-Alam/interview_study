@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 
 //contains() : Checks whether a string contains a sequence of characters
 

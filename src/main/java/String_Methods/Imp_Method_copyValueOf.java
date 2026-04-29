@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 
 /*
  * It takes a character array (or a portion of it) and returns a new 

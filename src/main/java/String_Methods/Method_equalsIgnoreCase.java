@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 public class Method_equalsIgnoreCase {
     public static void main(String[] args) {
         String s1 = "Hello";

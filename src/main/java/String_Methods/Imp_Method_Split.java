@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 
 public class Imp_Method_Split {
 	public static void main(String[] args) {

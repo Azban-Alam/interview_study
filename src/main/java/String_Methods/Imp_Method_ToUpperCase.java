@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 public class Imp_Method_ToUpperCase {
     public static void main(String[] args) {
         String text = "hello world";

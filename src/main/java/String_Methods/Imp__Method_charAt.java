@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 
 public class Imp__Method_charAt {
 

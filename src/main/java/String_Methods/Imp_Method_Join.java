@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package String_Class_Methods;
+package String_Methods;
 
 public class Imp_Method_compareTo {
 	// compareTo() : Compares two strings lexicographically
