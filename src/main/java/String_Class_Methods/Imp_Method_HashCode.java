@@ -1,6 +1,6 @@
 package String_Class_Methods;
 
-public class Method_HashCode {
+public class Imp_Method_HashCode {
 	public static void main(String[] args) {
 		String s1 = "Java";
 		String s2 = "Python";

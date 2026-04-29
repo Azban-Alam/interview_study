@@ -1,10 +1,14 @@
 package String_Class_Methods;
 
-public class Method_copyValueOf {
+/*
+ * It takes a character array (or a portion of it) and returns a new 
+ * string containing those characters.
+ * 
+ * */
+
+public class Imp_Method_copyValueOf {
 	public static void main(String[] args) {
 
-		// It takes a character array (or a portion of it) and returns a new containing
-		// those characters.
 		char[] letters = { 'J', 'a', 'v', 'a' };
 		String str = String.copyValueOf(letters);
 		System.out.println(str); // Output: Java

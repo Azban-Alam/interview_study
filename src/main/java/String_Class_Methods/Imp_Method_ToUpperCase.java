@@ -1,5 +1,5 @@
 package String_Class_Methods;
-public class Method_ToUpperCaseExample {
+public class Imp_Method_ToUpperCase {
     public static void main(String[] args) {
         String text = "hello world";
 

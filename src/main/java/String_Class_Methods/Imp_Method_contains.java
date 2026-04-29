@@ -1,10 +1,10 @@
 package String_Class_Methods;
 
-public class Method_contains {
+//contains() : Checks whether a string contains a sequence of characters
+
+public class Imp_Method_contains {
 	public static void main(String[] args) {
 
-		// contains() : Checks whether a string contains a sequence of characters
-		
 		String s = "Hello World";
 
 		System.out.println(s.contains("Hello")); // true

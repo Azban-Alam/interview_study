@@ -1,6 +1,6 @@
 package String_Class_Methods;
 
-public class Method_ToLowerCaseExample {
+public class Imp_Method_ToLowerCase {
 	public static void main(String[] args) {
 		String text = "HELLO WORLD";
 

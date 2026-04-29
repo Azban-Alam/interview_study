@@ -1,10 +1,13 @@
 package String_Class_Methods;
 
-public class Method_contentEquals {
+/*
+ * contentEquals(): Checks whether a string contains the exact 
+ * same sequence of characters of the specified
+ * CharSequence or StringBuffer
+ * 
+ *  */
+public class Imp_Method_contentEquals {
 	public static void main(String[] args) {
-
-		// contentEquals() Checks whether a string contains the exact same sequence of
-		// characters of the specified CharSequence or StringBuffer
 
 		// Example 1: Comparing with StringBuffer
 		String str = "Hello World";

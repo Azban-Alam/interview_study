@@ -1,6 +1,6 @@
 package String_Class_Methods;
 
-public class Method_concat {
+public class Imp_Method_concat {
 	public static void main(String[] args) {
 
 		// concat() : Appends a string to the end of another string

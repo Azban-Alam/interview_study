@@ -1,13 +1,12 @@
 package String_Class_Methods;
 
-public class Method_ValueOfExample {
+public class Imp_Method_ValueOf {
 	public static void main(String[] args) {
 		int num = 100;
 		double d = 45.67;
 
 		String str1 = String.valueOf(num);
 		String str2 = String.valueOf(d);
-
 		System.out.println(str1); // Output: "100"
 		System.out.println(str2); // Output: "45.67"
 

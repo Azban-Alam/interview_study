@@ -1,6 +1,6 @@
 package String_Class_Methods;
 
-public class Method_TrimExample {
+public class Imp_Method_Trim {
 	public static void main(String[] args) {
 		String text = "   Hello World   ";
 
