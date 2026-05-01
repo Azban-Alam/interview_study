@@ -2,7 +2,7 @@ package Arrays_Methods;
 
 import java.util.Arrays;
 
-public class Array_equals_int {
+public class Imp_Array_equals_int {
    public static void main(String[] args) {
 
       // initializing three int arrays

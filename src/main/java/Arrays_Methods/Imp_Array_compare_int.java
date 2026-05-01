@@ -2,7 +2,7 @@ package Arrays_Methods;
 
 import java.util.Arrays;
 
-public class Array_compare_int {
+public class Imp_Array_compare_int {
    public static void main(String[] args) {
 
       // initialize first int array

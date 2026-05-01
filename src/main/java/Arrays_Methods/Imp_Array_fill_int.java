@@ -2,7 +2,7 @@ package Arrays_Methods;
 
 import java.util.Arrays;
 
-public class Array_fill_int {
+public class Imp_Array_fill_int {
    public static void main(String[] args) {
 
       // initializing int array

@@ -1,6 +1,6 @@
 package Arrays_Methods;
 import java.util.Arrays;
-public class Array_binarySearch {
+public class Imp_Array_binarySearch_int {
    public static void main(String[] args) {
 
       // initializing unsorted int array

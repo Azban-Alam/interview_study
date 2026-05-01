@@ -2,7 +2,7 @@ package Arrays_Methods;
 
 import java.util.Arrays;
 
-public class Array_copyOf {
+public class Array_copyOf_char {
    public static void main(String[] args) {
 
       char[] charArr = { 'A', 'B', 'C', 'D' };
