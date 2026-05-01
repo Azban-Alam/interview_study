@@ -1,33 +1,29 @@
 package Hashtable.Constructors;
-// Using Hashtable() Constructor
-import java.io.*;
-import java.util.*;
 
-class AddElementsToHashtable 
-{
-    public static void main(String args[])
-    {
-        // No need to mention the
-        // Generic type twice
-        Hashtable<Integer, String> ht1 = new Hashtable<>();
+import java.util.Hashtable;
 
-        // Initialization of a Hashtable
-        // using Generics
-        Hashtable<Integer, String> ht2
-            = new Hashtable<Integer, String>();
+class AddElementsToHashtable {
+	public static void main(String args[]) {
+		// No need to mention the
+		// Generic type twice
+		Hashtable<Integer, String> ht1 = new Hashtable<>();
 
-        // Inserting the Elements
-        // using put() method
-        ht1.put(1, "one");
-        ht1.put(2, "two");
-        ht1.put(3, "three");
+		// Initialization of a Hashtable
+		// using Generics
+		Hashtable<Integer, String> ht2 = new Hashtable<Integer, String>();
 
-        ht2.put(4, "four");
-        ht2.put(5, "five");
-        ht2.put(6, "six");
+		// Inserting the Elements
+		// using put() method
+		ht1.put(1, "one");
+		ht1.put(2, "two");
+		ht1.put(3, "three");
 
-        // Print mappings to the console
-        System.out.println("Mappings of ht1 : " + ht1);
-        System.out.println("Mappings of ht2 : " + ht2);
-    }
+		ht2.put(4, "four");
+		ht2.put(5, "five");
+		ht2.put(6, "six");
+
+		// Print mappings to the console
+		System.out.println("Mappings of ht1 : " + ht1);
+		System.out.println("Mappings of ht2 : " + ht2);
+	}
 }

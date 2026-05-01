@@ -1,21 +1,13 @@
 package List_Methods.Basic_Methods;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Method_lastIndexOf {
-
 	public static void main(String[] args) {
 
-		List<Integer> l1 = new ArrayList<Integer>();
-		l1.add(10);
-		l1.add(20);
-		l1.add(30);
-		l1.add(40);
-		l1.add(50);
-		l1.add(60);
-		l1.add(30);
-
+		List<Integer> l1 = new ArrayList<Integer>(Arrays.asList(10, 20, 30, 40, 50, 60, 30));
 		System.out.println(l1.lastIndexOf(30));
 
 	}

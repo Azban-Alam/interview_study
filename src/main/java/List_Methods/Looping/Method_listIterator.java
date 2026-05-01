@@ -1,6 +1,7 @@
 package List_Methods.Looping;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -8,17 +9,10 @@ public class Method_listIterator {
 
 	public static void main(String[] args) {
 
-		List<Integer> numbers = new ArrayList<Integer>();
-		numbers.add(10);
-		numbers.add(20);
-		numbers.add(30);
-		numbers.add(36);
-		numbers.add(40);
-
+		List<Integer> numbers = new ArrayList<Integer>(Arrays.asList(10, 20, 30, 36, 40));
 		System.out.println("Original list: " + numbers);
 
-		// Remove an element by value (not index!)
-		numbers.remove(Integer.valueOf(36));
+		numbers.remove(Integer.valueOf(36)); // Remove an element by value (not index!)
 
 		System.out.println("After removing 36: " + numbers);
 
