@@ -15,10 +15,9 @@ public class Method_contains {
 
 		System.out.println(l1);
 
-		// Check If List Contains "Mango"
-		if (l1.contains("Mango")) {
+		if (l1.contains("Mango")) {  // Check If List Contains -- "Mango"
 			System.out.println("Yes- List Contains Mango");
-		}else {
+		} else {
 			System.out.println("List Does Not Contain Mango");
 		}
 	}

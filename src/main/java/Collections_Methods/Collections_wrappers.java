@@ -1,7 +1,7 @@
 package Collections_Methods;
 import java.util.*;
 
-public class Collections_Wrappers {
+public class Collections_wrappers {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>(Arrays.asList("A", "B"));
 

@@ -13,8 +13,7 @@ public class Method_clear {
 		list.add(400);
 		list.add(500);
 		
-		// Clear All Objects From List
-		list.clear();
+		list.clear();  // Clear All Objects From List
 		
 		System.out.println("Display Empty List"+list);
 		

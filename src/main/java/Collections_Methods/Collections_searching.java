@@ -2,7 +2,7 @@ package Collections_Methods;
 
 import java.util.*;
 
-public class Collections_Searching {
+public class Collections_searching {
 	public static void main(String[] args) {
 		List<String> fruits = new ArrayList<>(Arrays.asList("Apple", "Banana", "Mango"));
 
