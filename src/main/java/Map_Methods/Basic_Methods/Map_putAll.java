@@ -15,7 +15,9 @@ public class Map_putAll {
 		Map<String, Integer> anotherMap = new HashMap<>();
 		anotherMap.put("X", 900);
 		anotherMap.put("Y", 1000);
+		
 		map.putAll(anotherMap);
+		
 		System.out.println("After putAll: " + map);
 
 	}

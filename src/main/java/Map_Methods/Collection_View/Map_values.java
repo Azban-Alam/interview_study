@@ -18,6 +18,12 @@ public class Map_values {
         // 2. values() - Returns all values
         Collection<Integer> values = map.values();
         System.out.println("Values: " + values);
+        
+        Iterator<Integer> itr = values.iterator();
+        while(itr.hasNext()) {
+        	Integer i11 = itr.next();
+        	System.out.println("v  "+i11);
+        }
 
         // 3. entrySet() - Returns all key-value pairs
         Set<Map.Entry<String, Integer>> entries = map.entrySet();
