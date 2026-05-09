@@ -1,4 +1,4 @@
-package Input_Output_Streams.ByteStream;
+package Input_Output_Streams.ByteStream.DIO;
 // Java program to Demonstrate DataInputStream Class
 
 // Importing I/O classes

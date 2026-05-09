@@ -1,4 +1,4 @@
-package Input_Output_Streams.ByteStream;
+package Input_Output_Streams.ByteStream.FileIO;
 
 import java.io.File;
 

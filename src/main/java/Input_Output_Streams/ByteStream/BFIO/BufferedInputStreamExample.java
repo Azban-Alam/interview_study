@@ -1,4 +1,4 @@
-package Input_Output_Streams.ByteStream;
+package Input_Output_Streams.ByteStream.BFIO;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
