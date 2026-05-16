@@ -4,7 +4,7 @@ import java.util.Enumeration;
 import java.util.Properties;
 import java.util.Set;
 
-public class PropertiesAllMethodsDemo {
+public class Method_propertyNames {
 	public static void main(String[] args) {
 
 		Properties props = new Properties();
