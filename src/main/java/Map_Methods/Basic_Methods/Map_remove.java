@@ -13,6 +13,7 @@ public class Map_remove {
 
 		// 3. remove(Object key) - Remove entry
 		Integer removedValue = map.remove("C");
+		
 		System.out.println("Removed value for key 'C': " + removedValue);
 		System.out.println("Map after remove: " + map);
 

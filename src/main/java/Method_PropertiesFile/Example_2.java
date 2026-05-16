@@ -1,8 +1,13 @@
 package Method_PropertiesFile;
-// Java program to demonstrate Properties class to get
 
-// information from the properties file
+/* Java program to demonstrate Properties class to get 
+ * information from the properties file
+ */
 
+/*
+ * Example 1: The below program shows how to use Properties class to get
+ * information from the properties file.
+ */
 import java.util.*;
 import java.io.*;
 
@@ -22,8 +27,3 @@ public class Example_2 {
 		System.out.println(p.getProperty("password"));
 	}
 }
-
-/*
- * Example 1: The below program shows how to use Properties class to get
- * information from the properties file.
- */
