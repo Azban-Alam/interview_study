@@ -45,7 +45,7 @@ public class Method_removeAll {
 		l1.add("Kiwi");
 		l1.add("Pine Apple");
 		
-		if (list1.removeAll(list2)) {
+		if (l1.removeAll(l2)) {
 			System.out.println("L1 remove All");
 		} else {
 			System.out.println("L1 does not contains All");

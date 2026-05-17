@@ -38,7 +38,7 @@ public class Method_containsAll {
 		l1.add("Kiwi");
 		l1.add("Pine Apple");
 		
-		if (list1.containsAll(list2)) {
+		if (l1.containsAll(l2)) {
 			System.out.println("L1 Contains All");
 		} else {
 			System.out.println("L1 does not contains All");
