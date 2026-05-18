@@ -2,7 +2,7 @@ package Map_SortedMap.Basic_Methods;
 
 import java.util.*;
 
-public class Method_Comparator2 {
+public class Method_comparator2 {
 	public static void main(String[] args) {
 		SortedMap<String, Integer> map = new TreeMap<>(Comparator.reverseOrder());
 		map.put("A", 1);

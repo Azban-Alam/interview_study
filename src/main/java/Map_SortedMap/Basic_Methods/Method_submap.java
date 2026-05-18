@@ -2,7 +2,7 @@ package Map_SortedMap.Basic_Methods;
 
 import java.util.*;
 
-public class Method_Submap {
+public class Method_submap {
 	public static void main(String[] args) {
 		SortedMap<String, Integer> map = new TreeMap<>();
 		map.put("A", 1);

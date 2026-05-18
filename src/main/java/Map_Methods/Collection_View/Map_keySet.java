@@ -24,6 +24,11 @@ public class Map_keySet {
 		// 2. values() - Returns all values
 		Collection<Integer> values = map.values();
 		System.out.println("Values: " + values);
+		
+		for (Integer integer : values) {
+			System.out.println(integer);
+			
+		}
 
 		for (Iterator<Integer> iterator = values.iterator(); iterator.hasNext();) {
 			Integer i1 = (Integer) iterator.next();
