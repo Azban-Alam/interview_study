@@ -3,9 +3,7 @@ package Method_PropertiesFile.Methods;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Enumeration;
 import java.util.Properties;
-import java.util.Set;
 
 public class Method_load {
 	public static void main(String[] args) {
