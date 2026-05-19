@@ -2,7 +2,7 @@ package Collections_Methods;
 
 import java.util.*;
 
-public class Collections_disjoint {
+public class Imp_Collections_disjoint {
 	public static void main(String[] args) {
 		
 		List<String> list1 = Arrays.asList("A", "B", "C");

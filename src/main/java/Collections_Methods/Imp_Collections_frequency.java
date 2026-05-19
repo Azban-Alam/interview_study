@@ -2,7 +2,7 @@ package Collections_Methods;
 
 import java.util.*;
 
-public class Collections_frequency {
+public class Imp_Collections_frequency {
 	public static void main(String[] args) {
 
 		List<Integer> nums = Arrays.asList(10, 20, 5, 20, 20, 40);

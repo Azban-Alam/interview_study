@@ -2,7 +2,7 @@ package Collections_Methods;
 
 import java.util.*;
 
-public class Collections_Replace {
+public class Imp_Collections_Replace {
 	public static void main(String[] args) {
 
 		List<String> dest = new ArrayList<>(Arrays.asList("X", "Y", "Z"));

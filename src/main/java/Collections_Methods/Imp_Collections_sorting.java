@@ -2,7 +2,7 @@ package Collections_Methods;
 
 import java.util.*;
 
-public class Collections_sorting {
+public class Imp_Collections_sorting {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<>(Arrays.asList("Banana", "Apple", "Mango"));
 
