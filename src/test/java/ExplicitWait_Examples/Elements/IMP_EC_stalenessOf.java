@@ -31,6 +31,6 @@ public class IMP_EC_stalenessOf {
 
 /*
  * Wait until an element is no longer attached to the DOM.
- * Parameters:WebElement.Returns:false if the element is still attached to the
+ * Parameters: WebElement .Returns:false if the element is still attached to the
  * DOM, true otherwise.
  */

@@ -15,10 +15,10 @@ public class EC_textToBePresentInElementValue {
 		driver.manage().window().maximize();
 		String url = "http://www.web-source.net/web_design_tips/alert_message_web_page_load.htm";
 		driver.get(url);
-		WebElement e1 = driver.findElement(By.xpath("//input"));
+		WebElement element = driver.findElement(By.xpath("//input"));
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			boolean b = wait.until(ExpectedConditions.textToBePresentInElementValue(e1, "text"));
+			boolean b = wait.until(ExpectedConditions.textToBePresentInElementValue(element, "text"));
 		} catch (NoAlertPresentException noAlert) {
 			noAlert.getMessage();
 		}
@@ -26,11 +26,8 @@ public class EC_textToBePresentInElementValue {
 
 }
 
-
-
 /*
- * An expectation for checking if the given text is present in the specified
- * elements value attribute. Parameters:element the WebElementvtext to be present
- * in the element's value attribute Returns:true once the element's value
- * attribute contains the given text
+ * Checking if the given text is present in the specified elements value
+ * attribute. Parameters: WebElement and "value attribute" text . Returns:true
+ * once the element's value attribute contains the given text
  */

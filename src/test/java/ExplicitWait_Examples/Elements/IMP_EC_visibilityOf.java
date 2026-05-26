@@ -31,15 +31,8 @@ public class IMP_EC_visibilityOf {
 }
 
 /*
- * An expectation for checking that an element, present on the DOM of a page, is
- * visible. Visibility means that the element is not only displayed but also has
- * a height and width that is greater than 0.
- */
-
-/*
- * Parameters: WebElement
- */
-
-/*
- * Returns:WebElement once it is*visible*
+ * Checking that an element, present on the DOM of a page, is visible.
+ * Visibility means that the element is not only displayed but also has a height
+ * and width that is greater than 0. Parameters: WebElement Returns: WebElement
+ * once it is visible
  */

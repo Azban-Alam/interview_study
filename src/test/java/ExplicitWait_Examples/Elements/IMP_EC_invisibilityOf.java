@@ -17,7 +17,7 @@ public class IMP_EC_invisibilityOf {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		// identify element and click()
 		WebElement e1 = driver.findElement(By.xpath("//*[text()='Library']"));
-		
+
 		// explicit wait of invisibility condition
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
 		// invisibilityOfElementLocated condition
@@ -28,9 +28,7 @@ public class IMP_EC_invisibilityOf {
 	}
 }
 
-
-/* 
- * An expectation for checking the element to be invisible Parameters:element
- * used to check its invisibilityReturns:Boolean true when elements is not
- * visible anymore
+/*
+ * Checking the element to be invisible . Parameters:WebElement Returns:
+ * true when elements is not visible anymore.
  */

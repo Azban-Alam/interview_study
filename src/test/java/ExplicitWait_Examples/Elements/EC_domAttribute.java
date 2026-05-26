@@ -10,33 +10,30 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class EC_domAttribute {
 	public static void main(String[] args) {
-		
+
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ghs6kor\\Desktop\\Java\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		// implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.tutorialspoint.com/index.htm"); // URL launch
-		
-		WebElement e1 = driver.findElement(By.className("mui-btn"));
-		System.out.println(e1.getDomAttribute("value"));
+
+		WebElement element = driver.findElement(By.className("mui-btn"));
+		System.out.println(element.getDomAttribute("attribute_name"));
 
 		// explicit wait
 		WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// elementToBeClickable expected criteria
-		Boolean until = wt.until(ExpectedConditions.domAttributeToBe(e1, "attribute_name", "attribute_value"));
+		Boolean until = wt.until(ExpectedConditions.domAttributeToBe(element, "attribute_name", "attribute_value"));
 
 		driver.close();
 	}
 
 }
 
-
-
 /*
- * An expectation for checking given WebElement has DOM attribute with a
- * specific value Parameters:element used to check its parameters attribute
- * attribute name value used as expected attribute value
- * Returns:Boolean true when element has DOM attribute with the value
+ * Checking given WebElement has DOM attribute with a specific value.
+ * Parameters: WebElement , attribute name and attribute value . Returns: true
+ * when element has same attribute value
  */

@@ -25,10 +25,8 @@ public class IMP_EC_attributeToBe {
 }
 
 /*
- * An expectation for checking given WebElement has attribute with a specific
- * value Parameters:element used to check its parameters attribute used to
- * define css or html attribute value used as expected attribute
- * valueReturns:Boolean true when element has css or html attribute with the
- * value
+ * Checking given WebElement has attribute with a specific value
+ * Parameters:WebElement ,attribute_name and attribute value . Returns: true
+ * when element same attribute value
  * 
  */

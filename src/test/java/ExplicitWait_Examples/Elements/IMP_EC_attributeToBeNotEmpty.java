@@ -31,11 +31,8 @@ public class IMP_EC_attributeToBeNotEmpty {
 
 }
 
-
-
 /*
- * An expectation for checking WebElement any non empty value for given
- * attribute Parameters:element used to check its parameters attribute used to
- * define css or html attribute Returns:Boolean true when element has css or html
- * attribute with non empty value
+ * Checking WebElement contains any non empty value for given attribute.
+ * Parameters:WebElement and attribute name . Returns: true when element
+ * has attribute with non empty value
  */

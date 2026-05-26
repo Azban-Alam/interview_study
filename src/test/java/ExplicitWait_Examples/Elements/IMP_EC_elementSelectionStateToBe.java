@@ -29,7 +29,8 @@ public class IMP_EC_elementSelectionStateToBe {
 		Select select = new Select(multiComboBox);
 		select.selectByIndex(1);
 
-		Boolean until = wait.until(ExpectedConditions.elementSelectionStateToBe(By.xpath("//option[@value=\"orange\"]"), true));
+		Boolean until = wait
+				.until(ExpectedConditions.elementSelectionStateToBe(By.xpath("//option[@value=\"orange\"]"), true));
 		select.selectByIndex(0);
 
 	}
@@ -37,7 +38,6 @@ public class IMP_EC_elementSelectionStateToBe {
 }
 
 /*
- * An expectation : checking if the given element is selected.
- * Parameters: WebElement 
- * Returns:true once the element's selection stated is selected
+ * Checking if the given element is selected. Parameters: WebElement Returns:
+ * true once the element's state is selected
  */

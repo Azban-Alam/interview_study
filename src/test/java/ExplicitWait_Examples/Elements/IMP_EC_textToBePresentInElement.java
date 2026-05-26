@@ -17,7 +17,7 @@ public class IMP_EC_textToBePresentInElement {
 		driver.get(url);
 
 		WebElement element = driver.findElement(By.xpath("//input"));
-		
+
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			boolean b = wait.until(ExpectedConditions.textToBePresentInElement(element, "element_text_value"));
@@ -28,8 +28,7 @@ public class IMP_EC_textToBePresentInElement {
 }
 
 /*
- * An expectation for checking if the given text is present in the specified
- * element. Parameters:element the WebElement ,text to be present in the
- * element Returns:true once the element contains the given text
+ * Checking if the given text is present in the specified element.
+ * Parameters:WebElement and WebElement text be present in the element
+ * Returns:true once the element contains the given text
  */
-
