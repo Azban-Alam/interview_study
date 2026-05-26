@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_textToBePresentInElementValue {
+public class IMP_EC_textToBePresentInElementValue {
 	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
