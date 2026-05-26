@@ -1,6 +1,8 @@
 package ExplicitWait_Examples;
 
 import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +26,7 @@ public class EC_numberOfElementsToBeMoreThan {
 		WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// elementToBeClickable expected criteria
-		wt.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.tagName("input"), 1));
+		List<WebElement> until = wt.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.tagName("input"), 1));
 
 		driver.close();
 	}

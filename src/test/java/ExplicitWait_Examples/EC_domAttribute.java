@@ -25,7 +25,7 @@ public class EC_domAttribute {
 		WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// elementToBeClickable expected criteria
-		wt.until(ExpectedConditions.domAttributeToBe(e1, "value", "text"));
+		Boolean until = wt.until(ExpectedConditions.domAttributeToBe(e1, "attribute_name", "attribute_value"));
 
 		driver.close();
 	}

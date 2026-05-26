@@ -1,35 +1,38 @@
 package ExplicitWait_Examples;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_urlToBe {
-	public static void main(String[] args) throws Exception {
+public class IMP_EC_visibilityOfAllElements {
+	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		String url = "http://www.web-source.net/web_design_tips/alert_message_web_page_load.htm";
 		driver.get(url);
+		List<WebElement> elements = driver.findElements(By.name("id"));
+
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			boolean b = wait.until(ExpectedConditions.urlToBe("URL"));
-			System.out.println("Boolean is TRUE id title matches" + b);
+			List<WebElement> e1 = wait.until(ExpectedConditions.visibilityOfAllElements(elements));
 		} catch (NoAlertPresentException noAlert) {
 			noAlert.getMessage();
 		}
 	}
+
 }
 
-
 /*
- * Open Declaration ExpectedCondition <Boolean>
- * org.openqa.selenium.support.ui.ExpectedConditions.urlToBe ( String url )
- * 
- * An expectation for the URL of the current page to be a specific url.
- * Parameters:url that the page should be on
- * Returns:true when the URL is what it should be
+ * An expectation for checking that all elements present on the web page that
+ * match the locator are visible. Visibility means that the elements are not
+ * only displayed but also have a height and width that is greater than 0.
+ * Parameters:elements list of WebElements Returns:the list of WebElements once
+ * they are located
  */

@@ -3,11 +3,12 @@ package ExplicitWait_Examples;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_elementToBeClickable {
+public class IMP_EC_elementToBeClickable {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ghs6kor\\Desktop\\Java\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -21,7 +22,7 @@ public class EC_elementToBeClickable {
 		WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 		// elementToBeClickable expected criteria
-		wt.until(ExpectedConditions.elementToBeClickable(By.className("s-buy")));
+		WebElement until = wt.until(ExpectedConditions.elementToBeClickable(By.className("s-buy")));
 		
 		driver.close();
 	}

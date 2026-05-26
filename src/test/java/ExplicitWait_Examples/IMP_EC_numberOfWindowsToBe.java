@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-public class EC_numberOfWindowsToBe {
+public class IMP_EC_numberOfWindowsToBe {
 
 	public static void main(String[] args) {
 
@@ -39,7 +39,7 @@ public class EC_numberOfWindowsToBe {
 		wait.until(ExpectedConditions.elementToBeClickable(myElement)).click();
 
 		// Wait for the new window or tab
-		wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+		Boolean until = wait.until(ExpectedConditions.numberOfWindowsToBe(2));
 
 		// Loop through until we find a new window handle
 		for (String windowHandle : driver.getWindowHandles()) {

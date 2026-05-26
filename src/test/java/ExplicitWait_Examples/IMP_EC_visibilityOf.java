@@ -1,36 +1,45 @@
 package ExplicitWait_Examples;
 
 import java.time.Duration;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_urlContains {
-	public static void main(String[] args) throws Exception {
+public class IMP_EC_visibilityOf {
+	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		String url = "http://www.web-source.net/web_design_tips/alert_message_web_page_load.htm";
 		driver.get(url);
+
+		WebElement element = driver.findElement(By.xpath(""));
+
 		try {
+
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			boolean b = wait.until(ExpectedConditions.urlContains("web-source"));
-			System.out.println("Boolean is TRUE id title matches" + b);
+			WebElement e1 = wait.until(ExpectedConditions.visibilityOf(element));
+
 		} catch (NoAlertPresentException noAlert) {
 			noAlert.getMessage();
 		}
 	}
+
 }
 
+/*
+ * An expectation for checking that an element, present on the DOM of a page, is
+ * visible. Visibility means that the element is not only displayed but also has
+ * a height and width that is greater than 0.
+ */
 
 /*
- * Open Declaration ExpectedCondition <Boolean>
- * org.openqa.selenium.support.ui.ExpectedConditions.urlContains ( String
- * fraction )
- * 
- * An expectation for the URL of the current page to contain specific text.
- * Parameters: fraction of the url that the page should be on
- * Returns:true when the URL contains the text
+ * Parameters: WebElement
+ */
+
+/*
+ * Returns:WebElement once it is*visible*
  */

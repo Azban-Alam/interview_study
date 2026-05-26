@@ -1,27 +1,21 @@
 package ExplicitWait_Examples;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_invisibilityOf {
+public class IMP_EC_invisibilityOfElementWithText {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.tutorialspoint.com/index.htm");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		// identify element and click()
-		WebElement e1 = driver.findElement(By.xpath("//*[text()='Library']"));
 		
-		// explicit wait of invisibility condition
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
 		// invisibilityOfElementLocated condition
-		w.until(ExpectedConditions.invisibilityOf(e1));
+		Boolean until = w.until(ExpectedConditions.invisibilityOfElementWithText(By.xpath(""), "text"));
 		// get page title of next page
 		System.out.println("Page title after click:" + driver.getTitle());
 		driver.close();
@@ -29,8 +23,10 @@ public class EC_invisibilityOf {
 }
 
 
-/* 
- * An expectation for checking the element to be invisible Parameters:element
- * used to check its invisibilityReturns:Boolean true when elements is not
- * visible anymore
+
+/*
+ * An expectation for checking that an element with text is either invisible or
+ * not present on the DOM. Parameters:locator used to find the element text of the
+ * element Returns:true if no such element, stale element or displayed text not
+ * equal that provided
  */

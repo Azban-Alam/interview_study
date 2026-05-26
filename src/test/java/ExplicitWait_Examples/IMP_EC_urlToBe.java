@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_titleIs {
+public class IMP_EC_urlToBe {
 	public static void main(String[] args) throws Exception {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
@@ -16,10 +16,8 @@ public class EC_titleIs {
 		driver.get(url);
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			boolean b = wait.until(ExpectedConditions.titleIs("google"));
-
+			boolean b = wait.until(ExpectedConditions.urlToBe("URL"));
 			System.out.println("Boolean is TRUE id title matches" + b);
-
 		} catch (NoAlertPresentException noAlert) {
 			noAlert.getMessage();
 		}
@@ -27,10 +25,8 @@ public class EC_titleIs {
 }
 
 /*
- * Open Declaration ExpectedCondition <Boolean>
- * org.openqa.selenium.support.ui.ExpectedConditions.titleIs ( String title )
  * 
- * An expectation for checking the title of a page. Parameters:expected title,
- * which must be an exact match. Returns:true when the title
- * matches, false otherwise
+ * An expectation for the URL of the current page to be a specific url.
+ * Parameters: url that the page should be on Returns:true when the URL is what
+ * it should be
  */

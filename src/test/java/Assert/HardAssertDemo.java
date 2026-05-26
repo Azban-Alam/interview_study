@@ -35,7 +35,7 @@ public class HardAssertDemo {
         Assert.assertTrue(searchBox.isDisplayed(), "Search box is not visible");
 
         // Hard assertion: Search box should not be pre-filled
-        Assert.assertEquals(searchBox.getAttribute("value"), "", "Search box is not empty");
+        Assert.assertEquals(searchBox.getDomAttribute("value"), "", "Search box is not empty");
     }
 
     @AfterClass

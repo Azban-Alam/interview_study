@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_elementSelectionStateToBe {
+public class IMP_EC_elementSelectionStateToBe {
 
 	public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ public class EC_elementSelectionStateToBe {
 		Select select = new Select(multiComboBox);
 		select.selectByIndex(1);
 
-		wait.until(ExpectedConditions.elementSelectionStateToBe(By.xpath("//option[@value=\"orange\"]"), true));
+		Boolean until = wait.until(ExpectedConditions.elementSelectionStateToBe(By.xpath("//option[@value=\"orange\"]"), true));
 		select.selectByIndex(0);
 
 	}
@@ -37,8 +37,7 @@ public class EC_elementSelectionStateToBe {
 }
 
 /*
- * An expectation for checking if the given element is selected.
- * Parameters:element WebElement to be selected selected boolean state of the
- * selection state of the element Returns:true once the element's selection
- * stated is that of selected
+ * An expectation : checking if the given element is selected.
+ * Parameters: WebElement 
+ * Returns:true once the element's selection stated is selected
  */

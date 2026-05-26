@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_alertIsPresent {
+public class IMP_EC_alertIsPresent_imp {
 	public static void main(String[] args) throws Exception {
 
 		WebDriver driver = new FirefoxDriver();
@@ -18,8 +18,8 @@ public class EC_alertIsPresent {
 		try {
 
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.alertIsPresent());
-
+			Alert until = wait.until(ExpectedConditions.alertIsPresent());
+			
 			Alert alert = driver.switchTo().alert();
 			System.out.println("Alert box text " + alert.getText());
 			alert.accept();

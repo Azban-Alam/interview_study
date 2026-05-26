@@ -1,35 +1,36 @@
 package ExplicitWait_Examples;
 
 import java.time.Duration;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class EC_visibilityOf {
-	public static void main(String[] args) {
+public class IMP_EC_titleIs {
+	public static void main(String[] args) throws Exception {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		String url = "http://www.web-source.net/web_design_tips/alert_message_web_page_load.htm";
 		driver.get(url);
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			WebElement e1 = wait
-					.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
+			boolean b = wait.until(ExpectedConditions.titleIs("google"));
+
+			System.out.println("Boolean is TRUE id title matches" + b);
+
 		} catch (NoAlertPresentException noAlert) {
 			noAlert.getMessage();
 		}
 	}
-
 }
 
-
 /*
- * An expectation for checking that an element, known to be present on the DOM
- * of a page, is visible. Visibility means that the element is not only displayed
- * but also has a height and width that is greater than 0. Parameters:element the
- * WebElement Returns:the (same) WebElement once it is visible
+ * Open Declaration ExpectedCondition <Boolean>
+ * org.openqa.selenium.support.ui.ExpectedConditions.titleIs ( String title )
+ * 
+ * An expectation for checking the title of a page. Parameters:expected title,
+ * which must be an exact match. Returns:true when the title
+ * matches, false otherwise
  */
