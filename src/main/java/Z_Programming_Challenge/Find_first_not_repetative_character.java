@@ -3,7 +3,7 @@ package Z_Programming_Challenge;
 public class Find_first_not_repetative_character {
 	public static void main(String[] args) {
 
-		String str = "stress";
+		String str = "strtess";
 		char result = 0;
 
 		for (int i = 0; i < str.length(); i++) {

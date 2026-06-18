@@ -3,7 +3,6 @@ package String_Methods;
 /*
  * contentEquals(): Checks whether a string contains the exact 
  * same sequence of characters of the specified
- * CharSequence or StringBuffer
  * 
  *  */
 public class Imp_Method_contentEquals {
@@ -18,6 +17,9 @@ public class Imp_Method_contentEquals {
 		String str1 = "Java";
 		CharSequence cs = "Java";
 		System.out.println(str1.contentEquals(cs)); // true
+
+		// Example 3: Negative Scenario
+		System.out.println(str1.contentEquals("Java Hello")); // false
 
 	}
 }
