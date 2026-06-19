@@ -2,7 +2,7 @@ package Z_Programming_Challenge;
 
 public class Find_first_repeating_char {
 	public static void main(String[] args) {
-		String str = "apple";
+		String str = "Automation";
 		char result = 0;
 
 		for (int i = 0; i < str.length(); i++) {
