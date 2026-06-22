@@ -11,6 +11,6 @@ public class Imp_Collections_sorting {
 
 		Collections.sort(list, Collections.reverseOrder()); // Sorts list using custom comparator (reverse order)
 		System.out.println("Reverse Sorted: " + list); // Reverse Sorted: [Mango, Banana, Apple]
-
+		
 	}
 }

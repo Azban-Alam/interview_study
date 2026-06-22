@@ -7,6 +7,7 @@ public class Imp_Method_endsWith {
 		System.out.println(str.endsWith("World")); // true
 		System.out.println(str.endsWith("Hello")); // false
 		System.out.println(str.endsWith("ld")); // true
+		System.out.println(str.endsWith("d")); // true
 		
 	}
 }

@@ -15,6 +15,10 @@ public class Imp_Method_Join {
 		List<String> names = Arrays.asList("Israr", "Alam", "QA Architect");
 		String joined = String.join(" | ", names);
 		System.out.println(joined); // Output: Israr | Alam | QA Architect
+		
+		String[] array = {"apple","mango","orange","kiwi"};
+		String result2 = String.join("-", array);
+		System.out.println(result2);
 
 	}
 }
